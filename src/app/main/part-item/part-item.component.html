@@ -1,0 +1,27 @@
+<article>
+    <h3> {{ parts.partName }} </h3>
+
+    <p class="id">{{ parts.id }}</p>
+
+    <p class="manifacturer"> {{ parts.manifacturer }}</p>
+
+</article>
+
+<article>
+    <h3> {{ parts.partName }} </h3>
+  
+    <p class="partName"
+       [class.blue]="position < 5"
+       [class.orange]="position >= 5 && position < 10"
+       [class.red]="position >= 10">
+      {{ parts.partName }}
+    </p>
+  
+    <p class="id">
+      {{ parts.id }}
+    </p>
+  
+    <div>
+      <button (click)="onClick()">Mark as most wanted</button>
+    </div>
+  </article>

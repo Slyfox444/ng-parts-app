@@ -1,0 +1,19 @@
+<form form="ngForm" (ngSubmit)="onSubmit()" >
+
+
+    <div>
+        <label for="PartName">Part Name</label>
+        <input type="text" id="partName" name="partName" required minlength="5" [(ngModel)]="part.partName" #partNameControl="ngModel">
+
+    
+    </div>
+
+    <div>
+        <label for="manifacturer"> Manifacturer </label>
+        <input type="text" id="manifacturer" name="manifacturer" [(ngModel)]="part.manifacturer" ngModel>
+    </div>
+
+    <div>
+        <button type="submit"> Save </button>
+    </div>
+</form>

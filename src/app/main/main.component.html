@@ -1,0 +1,16 @@
+<p>most wanted part: {{ mostWantedPart?.partName || '-' }}</p>
+
+<hr>
+
+<div>
+  <app-part-td-form></app-part-td-form>
+</div>
+
+<hr>
+
+<section>
+  <app-part-item *ngFor="let part of parts; let i = index"
+                 [parts]="part"
+                 [position]="i"
+                 (partClicked)="onMarkAsWanted($event)"></app-part-item>
+</section>

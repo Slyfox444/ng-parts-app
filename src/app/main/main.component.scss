@@ -1,0 +1,16 @@
+.warning {
+    color: orange;
+}
+
+.info {
+    color: #52b3e3;
+}
+
+section {
+    display: flex;
+
+    app-part-item {
+        width: 25%;
+        margin-right: 10px;
+    }
+}
